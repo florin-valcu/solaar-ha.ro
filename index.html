@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solaar Home Automation</title>
+<style>
+:root{
+ --cream:#f1eee7;
+ --brown:#2e221e;
+ --blue:#5ea9ff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--brown);line-height:1.5}
+nav{position:sticky;top:0;background:rgba(241,238,231,.95);backdrop-filter:blur(8px);padding:16px 5%;display:flex;justify-content:space-between;z-index:100}
+nav a{text-decoration:none;color:var(--brown);margin-left:20px;font-weight:600}
+.hero{min-height:100vh;background:linear-gradient(rgba(46,34,30,.45),rgba(46,34,30,.45)),url('./resources/pic1.png');background-size:cover;background-position:center;display:flex;align-items:center;color:white;padding:5%}
+.hero h1{font-size:clamp(3rem,8vw,6rem);line-height:.95}
+.hero p{font-size:1.3rem;margin-top:20px}
+.btn{display:inline-block;margin-top:30px;padding:14px 28px;background:var(--blue);color:white;text-decoration:none;border-radius:8px}
+section{padding:90px 8%}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.dark{background:var(--brown);color:white}
+h2{font-size:clamp(2rem,5vw,4rem);margin-bottom:25px}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.card{background:white;padding:25px;border-radius:14px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+.card h3{font-size:2rem;margin-bottom:10px}
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;text-align:center}
+.step{background:white;padding:25px;border-radius:12px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.product{background:var(--brown);color:white;padding:30px;border-radius:14px}
+.contact{background:var(--brown);color:white;text-align:center}
+.custom-link {color:cyan}
+footer{padding:30px;text-align:center}
+@media(max-width:800px){.two-col{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+<div><strong>Solaar Home Automation</strong></div>
+<div>
+<a href="#despre">Despre</a>
+<a href="#oferim">Ce oferim</a>
+<a href="#vindem">Ce vindem</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div>
+<h1>Solaar Home Automation</h1>
+<p>Automating for your wellness</p>
+<a class="btn" href="https://cream-plantain-156.notion.site/36c795662f7680168344c9804c36fdc8?pvs=105">Vreau să fiu contactat când sistemul e disponibil</a>
+</div>
+</section>
+
+<section id="despre">
+<div class="two-col">
+<div>
+<h2>Despre noi</h2>
+<p>Suntem un start-up timișorean care își propune să ofere o memorie și un creier casei dumneavoastră. Cu ajutorul unui AI privat.</p><br>
+<p>Adăugați inteligență casei la fel cum ați cumpăra orice aparat electrocasnic. Fără cunoștințe de specialitate, fără configurare.</p><br>
+<p>Personalizați ce poate face această inteligență în același fel în care vorbiți cu o altă persoană.</p>
+</div>
+<div>
+<img src="./resources/pic1.png" style="width:100%;border-radius:16px;">
+</div>
+</div>
+</section>
+
+<section class="dark">
+<h2>De ce să ne alegeți pe noi</h2>
+<p>Suntem pasionați de tehnologie și de automatizări cu sens. Credem că operarea privată este esențială pentru un asemenea sistem. Credem că un asemenea sistem trebuie să fie ușor reparabil și suficient de robust. Să tolereze evenimente neprevăzute. Să funcționeze local, fără cloud și fără echipamente care sunt oprite de la distanță de producător atunci când acesta nu mai oferă suport pentru ele.</p>
+</section>
+
+<section id="oferim">
+<h2>Ce vă oferim</h2>
+<div class="features">
+<div class="card"><h3>01</h3>Un pachet complet cu tot ce aveți nevoie. Include un dispozitiv de control cu AI local.</div>
+<div class="card"><h3>02</h3>Un AI care vă analizează și optimizează mediul ambiant ca să dormiți excelent.</div>
+<div class="card"><h3>03</h3>Un AI care se uită cum consumați ca să facă strategii de economisire la curent.</div>
+<div class="card"><h3>04</h3>Un AI care vă udă plantele în modul optim.</div>
+<div class="card"><h3>05</h3>Un AI care optimizează consumul de utilități.</div>
+<div class="card"><h3>06</h3>Un AI cu care puteți conversa despre electrocasnicele dumneavoastră.</div>
+<div class="card"><h3>07</h3>Monitorizarea anomaliilor comportamentale ale persoanelor vulnerabile.</div>
+<div class="card"><h3>08</h3>Control al echipamentelor de la distanță.</div>
+</div>
+</section>
+
+<section>
+<h2>Ce nu vă oferim</h2>
+<div class="features">
+<div class="card">Compatibilitate cu orice dispozitiv smart. Testăm și alegem echipamente care funcționează bine împreună.</div>
+<div class="card">Un ecran cu grafice impresionante și cu multe numere. AI-ul folosește datele și vă comunică semnificația lor.</div>
+</div>
+</section>
+
+<section>
+<h2>Cum funcționează</h2>
+<!--<div class="timeline">
+<div class="step">1. Deschizi cutia</div>
+<div class="step">2. Montezi</div>
+<div class="step">3. Alimentezi</div>
+<div class="step">4. Funcționează imediat</div>-->
+<img src="./resources/proces.png" style="width:100%;border-radius:16px;">
+</div>
+</section>
+
+<section id="vindem">
+<h2>Ce vindem</h2>
+<div class="products">
+<div class="product"><h3>Pachet complet</h3><p>Include AI-ul local și dispozitivele necesare.</p></div>
+<div class="product"><h3>Addon-uri</h3><p>Capabilități noi pentru sistemul tău.</p></div>
+<div class="product"><h3>Abonament AI</h3><p>Actualizări pentru AI-ul local.</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contactați-ne</h2>
+<p style="font-size:1.3rem">florin.valcu@outlook.com</p>
+<p style="font-size:1.3rem">+40 722.628.968</p>
+<p style="margin-top:20px">Automating for your wellness</p>
+<a href="https://cream-plantain-156.notion.site/36c795662f7680168344c9804c36fdc8?pvs=105" class="custom-link">Doresc să fiu notificat atunci când sistemul este disponibil</a>
+</section>
+
+<footer>© Solaar Home Automation</footer>
+</body>
+</html>
